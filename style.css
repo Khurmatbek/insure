@@ -38,6 +38,7 @@
 }
 
 body {
+    overflow-x: hidden;
     padding: 0;
     margin: 0;
     font-family: "Karla";
@@ -53,12 +54,13 @@ body {
     padding-left: 20px;
     padding-right: 20px;
 }
-.site-header{
-    position:relative;
+
+.site-header {
+    position: relative;
     z-index: 10;
     background-color: #fff;
-    
-   
+
+
 }
 
 .site-header-in {
@@ -100,9 +102,9 @@ body {
 
     color: #837D88;
 }
-.header-link:hover
-{
-color: #2C2830;
+
+.header-link:hover {
+    color: #2C2830;
 }
 
 .header-right-part {
@@ -124,7 +126,8 @@ color: #2C2830;
     border: 1.5px solid #2C2830;
 
 }
-.header-right-link:hover{
+
+.header-right-link:hover {
     background: #2C2830;
     border: 1.5px solid #2C2830;
     color: #FFFFFF;
@@ -133,7 +136,8 @@ color: #2C2830;
 .site-section {
     width: 100%;
     background-color: #2D2641;
-    overflow: hidden;
+    margin-bottom: 300px;
+
 
 
 }
@@ -141,6 +145,7 @@ color: #2C2830;
 .site-section-box {
     position: relative;
     display: flex;
+
 }
 
 .site-section-box::after {
@@ -167,7 +172,6 @@ color: #2C2830;
     top: -140px;
 }
 
-
 .section-text-part {
     position: relative;
     width: 540px;
@@ -178,7 +182,6 @@ color: #2C2830;
 
 .section-text::before {
     background-image: url("./images/Rectangle.svg");
-
     content: "";
     position: absolute;
     width: 150px;
@@ -213,8 +216,8 @@ color: #2C2830;
 }
 
 .section-link {
-    display: blok;
-    padding: 12px 28px;
+    display: inline-block;
+    padding: 12px 25px;
     font-weight: 700;
     line-height: 15px;
     letter-spacing: 1.5px;
@@ -225,18 +228,181 @@ color: #2C2830;
 }
 
 .section-link:hover {
-background: #FFFFFF;
-border: 1.5px solid #FFFFFF;
-color: #2C2830;
-}
-.sectioon-img-part {
-    position: relative;
+    background: #FFFFFF;
+    border: 1.5px solid #FFFFFF;
+    color: #2C2830;
 }
 
+/* .sectioon-img-part {
+    
+    position: relative;
+
+
+} */
 
 .section-img {
     position: absolute;
+    margin-bottom: 100px;
     top: 105px;
     width: 540px;
     height: 650px;
+}
+
+/* second section part */
+
+.section-second-box {
+    padding-bottom: 158px;
+}
+
+.section-second-different {
+    margin: 0;
+    margin-bottom: 208px;
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 64px;
+    letter-spacing: -1px;
+
+    color: #2C2830;
+}
+
+.section-second-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.section-second-item {
+    position: relative;
+    width: 350px;
+    margin-right: 30px;
+
+}
+
+.section-second-item:last-child {
+    margin: 0;
+}
+
+.section-second-link {
+    text-decoration: none;
+}
+
+.section-second-text {
+    position: relative;
+    margin: 0;
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: -0.388889px;
+    margin-bottom: 16px;
+
+    color: #2C2830;
+}
+
+.itemone::before {
+    position: absolute;
+    content: "";
+    background-image: url("./icons/Group\ 5.svg");
+    top: -112px;
+    width: 86px;
+    height: 86px;
+    background-repeat: no-repeat;
+}
+
+.itemtwo::before {
+    position: absolute;
+    content: "";
+    background-image: url("./icons/dollar.svg");
+    top: -112px;
+    width: 86px;
+    height: 86px;
+    background-repeat: no-repeat;
+}
+
+.itemtvi::before {
+    position: absolute;
+    content: "";
+    background-image: url("./icons/Group\ 8.svg");
+    top: -112px;
+    width: 86px;
+    height: 86px;
+    background-repeat: no-repeat;
+}
+
+.section-second-paragraph {
+    margin: 0;
+    font-family: 'Karla';
+
+    font-size: 16px;
+    line-height: 26px;
+    color: #837D88;
+}
+
+/* site-article part */
+
+.site-article {
+    margin: auto;
+    padding-bottom: 150px;
+}
+
+.article-box {
+    background: #2D2641;
+    display: flex;
+    align-items: center;
+    padding: 69px 80px;
+    
+
+}
+
+.article-text-box {
+    width: 475px;
+    margin-right: auto;
+
+
+}
+
+.article-text {
+    margin: 0;
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -0.777778px;
+    color: #FFFFFF;
+
+}
+
+.article-link {
+    display: inline-block;
+    padding: 12px 28.5px;
+    text-decoration: none;
+    font-weight: 700;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 1.5px;
+    color: #2C2830;
+    background: #FFFFFF;
+    border: 1.5px solid #2C2830;
+
+
+}
+
+.article-link::before {
+    position: absolute;
+    content: "";
+    background-image: url("./images/groupleft.svg");
+    background-repeat: no-repeat;
+    width: 765px;
+    height: 713px;
+    top: -300px;
+    left: -205px;
+
+
 }
